@@ -1,5 +1,6 @@
 import operations
 
+
 def operation():
     print("########################")
     print("  PYTHON CALCULATOR PROJECT   ")
@@ -13,13 +14,13 @@ def operation():
     print("")
     print("#######################")
     print("")
-    next_cal="y"
-    while next_cal=="y":
-        operation_input=int(input("Enter Operation(1/2/3/4):"))
+    next_cal = "y"
+    while next_cal == "y":
+        operation_input = int(input("Enter Operation(1/2/3/4):"))
         first_num = int(input("Enter first number:"))
-        sec_num=int(input("Enter second number:"))
+        sec_num = int(input("Enter second number:"))
         operations.actual_operation(operation_input, first_num, sec_num)
-        next_cal=input("Let's do next calculation? (y/n):")
+        next_cal = input("Let's do next calculation? (y/n):")
 
 
 
