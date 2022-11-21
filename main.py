@@ -2,7 +2,7 @@ import operations
 
 def operation():
     print("########################")
-    print("   PYTHON CALCULATOR    ")
+    print("  PYTHON CALCULATOR PROJECT   ")
     print("########################")
     print("")
     print("Select Operation")
