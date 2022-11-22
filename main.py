@@ -1,4 +1,5 @@
 import operations
+from operations_class import Operations
 
 
 def operation():
@@ -26,7 +27,9 @@ def operation():
             continue
         first_num = int(input("Enter first number:"))
         sec_num = int(input("Enter second number:"))
-        operations.actual_operation(operation_input, first_num, sec_num)
+        #operations.actual_operation(operation_input, first_num, sec_num)
+        op1 = Operations(first_num, sec_num)
+        op1.actual_operation(operation_input)
         next_cal = input("Let's do next calculation? (y/n):")
 
 
