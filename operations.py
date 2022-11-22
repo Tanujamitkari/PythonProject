@@ -4,7 +4,11 @@ def add(first_num, sec_num):
 
 
 def sub(first_num, sec_num):
-    out = first_num - sec_num
+    out = 0
+    if first_num > sec_num:
+        out = first_num - sec_num
+    elif sec_num > first_num:
+        out = sec_num - first_num
     return out
 
 
@@ -14,7 +18,11 @@ def mul(first_num, sec_num):
 
 
 def div(first_num, sec_num):
-    out = first_num / sec_num
+    try:
+        out = first_num / sec_num
+    except ZeroDivisionError as e:
+        print(f"division by zero is not allowed so exiting by returning error code -1:{e}")
+        return -1
     return out
 
 
